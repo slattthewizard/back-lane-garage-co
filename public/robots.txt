@@ -1,0 +1,6 @@
+# Back Lane Garage Co — robots.txt
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://backlanegarage.ca/sitemap-index.xml
