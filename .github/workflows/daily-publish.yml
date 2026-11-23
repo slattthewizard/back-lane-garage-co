@@ -22,7 +22,7 @@ jobs:
 
       - name: Run publisher
         env:
-          PUBLISH_MIN_HOURS: '0'  # hours between posts; 0 = one post per run
+          PUBLISH_MIN_HOURS: '36'  # one post every 48 h on the daily cron (12 h slack for cron delays)
           FORCE_PUBLISH: ${{ github.event_name == 'workflow_dispatch' }}
         run: python .github/scripts/cloud_publish.py
 
